@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MDA Titulos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://www.correoargentino.com.ar/sites/default/files/favicon_0.png"
+      type="image/png" />
+    <link href="css/index.css" rel="stylesheet">    
+  </head>
+  <body>
+    <header>
+      <div class="hleft">
+        <img class="logos" src="img/icon/Correo Argentino.svg"/>
+        <img class="logos" src="img/icon/areait.png"/>
+      </div>
+      <div class="hright">
+        <button type="button" id="loginIndex" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Admin</button>
+        <!-- <button id="loginIndex" class="btn btn-secondary" onclick="goAdmin()">Admin</button> -->
+        <button id="sugerencias" class="btn btn-secondary" onclick="goSugerencia()">Sugerencias</button>
+
+      </div>
+    </header>
+    <section id="contenido" class="contenido">
+      <div id="contenedor" class="contenedor">
+        <div class="top">
+          <h2 class="tituloindex">Titulos para el SM</h1>
+        </div>
+        <div id="selecionables" class="bot"></div>
+        <div id="ser"></div>
+        <div id="tit"></div>
+        <div id="btnCopy"></div>
+      </div>
+    </section>
+    
+    <footer>
+      <p class="footertext">Develop By <a href="https://www.linkedin.com/in/mariodanielledesma" target="_blank">Operador10</a></p>
+    </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Ingreso</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="username" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="username" required>
+                <div class="invalid-feedback">Por favor ingrese un usuario.</div>
+              </div>
+              <div id="validmsg" class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" minlength="6" required>
+                <div class="invalid-feedback">La contraseña debe tener al menos 6 caracteres.</div>
+              </div>
+              <span id="loginerror">Usuario y/o contraseña incorrectos</span>
+              <button type="submit" class="btn btn-secondary float-end">Ingresar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

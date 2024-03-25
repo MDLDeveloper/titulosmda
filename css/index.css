@@ -1,0 +1,87 @@
+.contenedor{
+    background-color: #f6fd8e;
+    padding: 15px;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 15px;
+    position: relative;
+    top: 7%;
+    box-shadow: 1px 1px 10px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contenido{
+    background-color:rgb(167, 198, 255);
+    height: 100vh;
+}
+
+.tituloindex{
+    text-align: center;
+}
+
+header{
+    background-color: rgb(240, 233, 139);
+    padding: 10px;
+    overflow: hidden;
+}
+
+footer{
+    background-color: rgb(240, 233, 139);
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 5px;
+    height: 35px;
+}
+
+#loginIndex, #sugerencias{
+    display: block;
+    float: right;
+    margin: 5px;
+}
+
+.footertext{
+    color: darkblue;
+}
+
+.btmEsq svg{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(241, 243, 233, 0.664);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    transition: 0.5s;
+}
+
+.btmEsq svg:hover{
+    background-color: rgba(0, 0, 0, 0.666);
+    color: rgba(240, 248, 255, 0.8);
+    transition: 0.5s;
+}
+
+#selecionables{
+    display: flex;
+    justify-content:space-around;
+}
+
+.logos{
+    display: block;
+    float: left;
+    height: 50px;
+    margin-top: -5px;
+}
+
+#btnCopy{
+    text-align: center;
+}
+
+#loginerror{
+    display: none;
+    text-align: center;
+    color: rgb(207, 112, 112);
+    margin-top: 10px;
+}
