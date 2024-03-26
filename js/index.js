@@ -1,7 +1,7 @@
 //a.innerHTML = '<div class="alert alert-secondary text-center" role="alert">Todavía no hay esquemas para ver.</div>'
 function cargarDatos(){
     let listCont = new XMLHttpRequest();
-    listCont.open('GET', 'https://titulosmda.c1.is/app/main.php');
+    listCont.open('GET', 'https://titulosmda.infinityfreeapp.com/main.php');
     listCont.onload = function() {
         if (listCont.status == 200) {
             let json = listCont.responseText;
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const validarDatos = (user, psw) => {
       const data = { user: user, password: psw };
-      fetch('https://titulosmda.c1.is/app/validation.php', {
+      fetch('https://titulosmda.infinityfreeapp.com/validation.php', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'

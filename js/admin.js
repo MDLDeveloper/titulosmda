@@ -2,7 +2,7 @@ const validarDatos = () => {
     const user = localStorage.getItem('usuario');
     const psw = localStorage.getItem('contraseña');
     const data = { user: user, password: psw };
-    fetch('https://titulosmda.c1.is/app/validation.php', {
+    fetch('https://titulosmda.infinityfreeapp.com/validation.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function cargarDatos(callback){
   let listCont = new XMLHttpRequest();
-  listCont.open('GET', 'https://titulosmda.c1.is/app/main.php');
+  listCont.open('GET', 'https://titulosmda.infinityfreeapp.com/main.php');
   listCont.onload = function() {
       if (listCont.status == 200) {
           let json = listCont.responseText;
@@ -208,7 +208,7 @@ function AddTitleForm() {
         descripcion: addDescTitle
     };
 
-    fetch('https://titulosmda.c1.is/app/agregartitulo.php', {
+    fetch('https://titulosmda.infinityfreeapp.com/agregartitulo.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -416,7 +416,7 @@ function AddTitleForm() {
         descrip: desc
     };
 
-    fetch('https://titulosmda.c1.is/app/modificartitulo.php', {
+    fetch('https://titulosmda.infinityfreeapp.com/modificartitulo.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -575,7 +575,7 @@ function AddTitleForm() {
         id_tit: id_tit
     };
 
-    fetch('https://titulosmda.c1.is/app/eliminartitulo.php', {
+    fetch('https://titulosmda.infinityfreeapp.com/eliminartitulo.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -653,7 +653,7 @@ const cargarSugerencias = () => {
         password: password
     };
 
-    fetch('https://titulosmda.c1.is/app/listadesugerencias.php', {
+    fetch('https://titulosmda.infinityfreeapp.com/listadesugerencias.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -721,7 +721,7 @@ const delSug = (id_sug) => {
             id_sug: id_sug
         };
 
-        fetch('https://titulosmda.c1.is/app/eliminarsugerencia.php', {
+        fetch('https://titulosmda.infinityfreeapp.com/eliminarsugerencia.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -752,7 +752,7 @@ const addSug = (id_sug, id_ser, nombreSug, descSug)=>{
             id_sug: id_sug
         };
 
-        fetch('https://titulosmda.c1.is/app/eliminarsugerencia.php', {
+        fetch('https://titulosmda.infinityfreeapp.com/eliminarsugerencia.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -898,7 +898,7 @@ const addSer = (id_esq, name)=>{
             descrip: name
         };
 
-        fetch('https://titulosmda.c1.is/app/addservicio.php', {
+        fetch('https://titulosmda.infinityfreeapp.com/addservicio.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -1022,7 +1022,7 @@ const delSer = (id_ser) => {
             id_ser: id_ser,
         };
 
-        fetch('https://titulosmda.c1.is/app/delservicio.php', {
+        fetch('https://titulosmda.infinityfreeapp.com/delservicio.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

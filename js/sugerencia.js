@@ -16,7 +16,7 @@ form.addEventListener('submit', (event) => {
 
 function cargarDatos(){
     let listCont = new XMLHttpRequest();
-    listCont.open('GET', 'https://titulosmda.c1.is/app/main.php');
+    listCont.open('GET', 'https://titulosmda.infinityfreeapp.com/main.php');
     listCont.onload = function() {
         if (listCont.status == 200) {
             let json = listCont.responseText;
@@ -79,7 +79,7 @@ function sendSugerencia(sugTitle, sugDesc, sugSer) {
         sugser: sugSer 
     };
 
-    fetch('https://titulosmda.c1.is/app/cargarsugerencia.php', {
+    fetch('https://titulosmda.infinityfreeapp.com/cargarsugerencia.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
